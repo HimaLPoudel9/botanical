@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  min-height: 100vh;
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  row-gap: 30px;
+
+  margin: 20px auto;
+}
+
+.logo {
+  grid-column-start: 1;
+}
+.header .menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+.menu {
+  grid-row: 2;
+  grid-column: 1;
+  grid-column-end: 3;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+    list-style: none;
+    transition: all 0.3s;
+  }
+  ul li:active{
+      color: blue;
+  }
+   ul li:hover{
+      color: blue;
+     
+      
+  } 
+.heading {
+  text-align: center;
+  margin: 40px auto;
+}
+.heading h1 {
+  font-size: 30px;
+  color: hsl(242, 28%, 21%);
+
+  /* text-align: center;
+        margin: 0 auto; */
+}
+.heading p {
+  font-size: 16px;
+  color: hsl(0, 0%, 36%);
+}
+.story,
+.mission,
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+.story img,
+.mission img,
+.services img {
+  width: 400px;
+  height: 300px;
+}
+.story h2,
+.mission h2,
+.services h2 {
+  font-size: 22px;
+  color: hsl(242, 28%, 21%);
+  margin-bottom: 20px;
+}
+.story p,
+.mission p,
+.services p {
+  font-size: 16px;
+  color: hsl(0, 0%, 36%);
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.footer-body {
+  margin: 1rem;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 7em auto;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-body .about h2 {
+  color: hsl(242, 28%, 21%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-body .about p {
+  font-size: 11px;
+  color: hsl(0, 0%, 36%);
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-icons h2 {
+  color: hsl(242, 28%, 21%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.social-icons a img {
+  width: 18px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: 
+    hsl(177, 51%, 90% ) 
+  ;
+
+  z-index: -1;
+}
+footer {
+  position: relative;
+ 
+}

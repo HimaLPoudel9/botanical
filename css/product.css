@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  min-height: 100vh;
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  row-gap: 30px;
+
+  margin: 20px auto;
+}
+
+.logo {
+  grid-column-start: 1;
+}
+.header .menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+.menu {
+  grid-row: 2;
+  grid-column: 1;
+  grid-column-end: 3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  transition: all 0.3s;
+}
+ul li:active{
+    color: blue;
+}
+ ul li:hover{
+    color: blue;
+   
+    
+} 
+.category .heading {
+  font-size: 30px;
+  margin: 50px 0px;
+  color: hsl(0, 0%, 0%);
+}
+
+button {
+  cursor: pointer;
+  background-color: hsl(202, 52%, 36%);
+  color: #fff;
+  border: none;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+}
+.plant-extract,
+.essential-oil,
+.fermentation,
+.oil {
+  margin-top: 1.5em;
+}
+.plant-extract h3,
+.essential-oil h3,
+.fermentation h3,
+.oil h3 {
+  text-transform: capitalize;
+  color: hsl(242, 28%, 21%);
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid hsl(240, 1%, 80%);
+}
+.plant-extract img,
+.essential-oil img,
+.fermentation img,
+.oil img {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.plant-image,
+.essential-image,
+.fermentation-image,
+.oil-image {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.plant-image h4,
+.essential-image h4,
+.fermentation-image h4,
+.oil-image h4 {
+  font-weight: 400;
+  margin: 20px 0px;
+  font-size: 15px;
+}
+.category-body a {
+  color: blue;
+  float: right;
+  text-decoration: none;
+}
+
+.footer-body {
+  margin: 1rem;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 7em auto;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-body .about h2 {
+  color: hsl(242, 28%, 21%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-body .about p {
+  font-size: 11px;
+  color: hsl(0, 0%, 36%);
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-icons h2 {
+  color: hsl(242, 28%, 21%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.social-icons a img {
+  width: 18px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: 
+    hsl(177, 51%, 90% ) 
+  ;
+
+  z-index: -1;
+}
+footer {
+  position: relative;
+ 
+}
